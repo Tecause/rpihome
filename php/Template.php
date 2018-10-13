@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>rPi Home</title>
+	<title>Create a Template</title>
 	<link rel="icon" href="./img/rpihome.ico">
+	
 	<!-- MAIN LIBRARIES -->
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css">
@@ -25,49 +26,39 @@
 	<script type="text/javascript" src="./js/mainImages.js"></script>
 	<!-- =============== -->
 
-
 </head>
 <body>
-
 	
-
-	<nav class="navbar navbar-expand-sm bg-info navbar-light sticky-top">
-		<div class="navbar-brand" href="#">
-			<img src="./img/rpi.jpg" alt="Logo" style="width:50px;">
-		</div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+   			<a class="navbar-brand" href="#">
+    			<img src="./img/rpi.jpg" alt="Logo" style="width:50px;">
+			</a>
 			<ul class="navbar-nav font-weight-bold">
 			    <li class="nav-item">
-			    	<a class="nav-link" href="#">Digital Switch</a>
+			    	<a class="nav-link" href="./digitalswitch.php">Digital Switch</a>
 			    </li>
 			    <li class="nav-item">
-			     	<a class="nav-link" href="#">Templates</a>
+			     	<a class="nav-link" href="./schedule.php">Templates</a>
 			    </li>
 			    <li class="nav-item">
-			     	<a class="nav-link" href="#">Scheduling</a>
+			     	<a class="nav-link" href="./template.php">Scheduling</a>
 			    </li>
 			    <li class="nav-item">
 			     	<a class="nav-link" href="#">Add User</a>
 			    </li>
 			</ul>
 
-			<a id="logout" class="nav-link ml-auto" href="./newIndex.php">Logout</a>
+			<a id="logout" class="nav-link ml-auto font-weight-bold " href="./index.php">Logout</a>
 	</nav>
 
 
 
 
 
-	<div class="container-fluid">
-		
-		
-		<div id="contentHolder">
-			
-			<?php include './php/Appliances.php'; ?>
-
-		</div>
 
 
-	</div>
-	
+
+
+
 </body>
-</html>
+</html>	

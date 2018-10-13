@@ -1,3 +1,7 @@
+#logout{
+	color: black;
+}
+
 .submit{
 	width: 100px;
 	height: 100px;
@@ -40,16 +44,23 @@ div.modal-body label img {
 }
 
 .applianceOptions i{
-	color: white;
 	position: fixed;
-	font-size: 30px;
 	margin-top: -55px;
 }
 
 #edit{
-	margin-left: -60px;
+	font-size: 30px;
+	color: white;
+	margin-left: -70px;
 }
 
 #delete{
+	font-size: 35px;
+	color: red;
 	margin-right: -20px;
+}
+
+li{
+	padding: 10px;
+	margin-left: 10px;
 }
