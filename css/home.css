@@ -33,15 +33,20 @@ div.modal-body label img {
 	display: inline;
 }
 
+#applianceImg:hover img {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
 .imgDiv img{
 	-webkit-filter: 0.2s ease;
 	transition: 0.2s ease;
 }
 
-.imgDiv img:hover{
+/* .imgDiv img:hover {
 	-webkit-filter: blur(10px);
 	filter: blur(10px);
-}
+} */
 
 .applianceOptions i{
 	position: fixed;
