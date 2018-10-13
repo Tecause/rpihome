@@ -15,8 +15,8 @@
 						<img id="imgCh1" src="' .$data["appPic"].'">
 
 						<div class="applianceOptions">
-							<i class="fas fa-edit"></i>
-							<i class="fas fa-times"></i>
+							<div id="edit"><i class="fas fa-edit"></i></div>
+							<div id="delete"><i class="fas fa-times"></i></div>
 						</div>
 					</div>
 

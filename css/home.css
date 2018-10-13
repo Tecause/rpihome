@@ -38,3 +38,18 @@ div.modal-body label img {
 	-webkit-filter: blur(10px);
 	filter: blur(10px);
 }
+
+.applianceOptions i{
+	color: white;
+	position: fixed;
+	font-size: 30px;
+	margin-top: -55px;
+}
+
+#edit{
+	margin-left: -60px;
+}
+
+#delete{
+	margin-right: -20px;
+}
