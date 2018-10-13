@@ -14,8 +14,9 @@ $(document).ready(function($) {
 		$.post('./php/GetAvailableChannels.php', function(data) {
 			var _data = JSON.parse(data);
 
+			$("#addAppliance select").find('option').remove();
 			for(var i = 0; i < _data.length; i++) {
-				$("#addAppliance select").append('<option>'+ _data[i] +'</option>')
+				$("#addAppliance select").append('<option>'+ _data[i] +'</option>');
 			}
 		});
 
