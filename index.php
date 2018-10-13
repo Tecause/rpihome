@@ -66,7 +66,7 @@
                <input type="text" name="username" placeholder="Username">
                <input type="password" name="password" placeholder="Password">
                <div class ="loginbutton">
-                  <button type="submit">Login</button>
+                  <button class="btn btn-primary font-weight-bold" type="submit">Login</button>
                </div>
             </form>
          </div>
