@@ -32,7 +32,7 @@
 	
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
    			<div class="navbar-brand" href="#">
-    			<img src="./img/rpi.jpg" alt="Logo" style="width:50px;">
+    			<img src="./img/rpi.jpg" alt="Logo" style="width:40px;">
 			</div>
 			<ul class="navbar-nav font-weight-bold">
 			    <li class="nav-item">

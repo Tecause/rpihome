@@ -33,7 +33,7 @@
 
 	<nav class="navbar navbar-expand-sm bg-info navbar-light sticky-top">
 		<div class="navbar-brand" href="#">
-			<img src="./img/rpi.jpg" alt="Logo" style="width:50px;">
+			<img src="./img/rpi.jpg" alt="Logo" style="width:40px;">
 		</div>
 			<ul class="navbar-nav font-weight-bold">
 			    <li class="nav-item">
@@ -45,12 +45,21 @@
 			    <li class="nav-item">
 			     	<a class="nav-link" href="#">Scheduling</a>
 			    </li>
-			    <li class="nav-item">
-			     	<a class="nav-link" href="#">Add User</a>
-			    </li>
 			</ul>
 
+                          
+			<div class="dropdown">
+		    	<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Settings<span class="caret"></span></button>
+		    	<ul class="dropdown-menu">
+			      	<li><a href="#">HTML</a></li>
+			      	<li><a href="#">CSS</a></li>
+			      	<li><a href="#">JavaScript</a></li>
+		   		</ul>
+			</div>
+		
+
 			<a id="logout" class="nav-link ml-auto" href="./newIndex.php">Logout</a>
+		</div> 
 	</nav>
 
 
