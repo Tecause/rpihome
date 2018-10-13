@@ -17,6 +17,10 @@ div.modal-body label img {
 	height: 50px;
 }
 
+.bg-gray {
+	background-color: #9ea1a8;
+}
+
 .imgDiv .applianceOptions {
 	display: none;
 }

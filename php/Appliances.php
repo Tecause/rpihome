@@ -53,57 +53,82 @@
 </div>
 
 <div class="modal fade" id="addAppliance">
-  <div class="modal-dialog">
-    <div class="modal-content">
+  	<div class="modal-dialog">
+	    <div class="modal-content">
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <span class="close" data-dismiss="modal">&times;</span>
-      </div>
+		    <!-- Modal Header -->
+		    <div class="modal-header">
+		    	<h4 class="modal-title">Modal Heading</h4>
+		        <span class="close" data-dismiss="modal">&times;</span>
+		    </div>
 
-      <!-- Modal body -->
-      <div class="modal-body">
-			<div>
-				<label id="aircon" for="aircon" class="radio">
-					<img src="./img/aircon.png" alt="">
-					<input type='radio' name='appPic[]' value='./img/aircon.png' id="aircon"/>
-				</label>
-				
-				<label for="charge" class="radio">
-					<img src="./img/charge.png" alt="">
-					<input type='radio' name='appPic[]' value='./img/charge.png' id="charge"/>
-				</label>
-				
-				<label for="fan" class="radio">
-					<img src="./img/fan.png" alt="">
-					<input type='radio' name='appPic[]' value='./img/fan.png' id="fan"/>
-				</label>
-				
-				<label for="light" class="radio">
-					<img src="./img/light.png" alt="">
-					<input type='radio' name='appPic[]' value='./img/light.png' id="light"/>
-				</label>
-				
-				<label for="ref" class="radio">
-					<img src="./img/ref.png" alt="">
-					<input type='radio' name='appPic[]' value='./img/ref.png' id="ref"/>
-				</label>
-				
-				<label for="tv" class="radio">
-					<img src="./img/tv.png" alt="">
-					<input type='radio' name='appPic[]' value='./img/tv.png' id="tv"/>
-				</label>
-			</div>
-      </div>
+		    <!-- Modal body -->
+		    <div class="modal-body">
+					<div>
+						<label id="aircon" class="radio">
+							<img src="./img/aircon.png" alt="">
+							<input type='radio' name='appPic[]' value='./img/aircon.png' id="aircon"/>
+						</label>
+						
+						<label for="charge" class="radio">
+							<img src="./img/charge.png" alt="">
+							<input type='radio' name='appPic[]' value='./img/charge.png' id="charge"/>
+						</label>
+						
+						<label for="fan" class="radio">
+							<img src="./img/fan.png" alt="">
+							<input type='radio' name='appPic[]' value='./img/fan.png' id="fan"/>
+						</label>
+						
+						<label for="light" class="radio">
+							<img src="./img/light.png" alt="">
+							<input type='radio' name='appPic[]' value='./img/light.png' id="light"/>
+						</label>
+						
+						<label for="ref" class="radio">
+							<img src="./img/ref.png" alt="">
+							<input type='radio' name='appPic[]' value='./img/ref.png' id="ref"/>
+						</label>
+						
+						<label for="tv" class="radio">
+							<img src="./img/tv.png" alt="">
+							<input type='radio' name='appPic[]' value='./img/tv.png' id="tv"/>
+						</label>
+					</div>
+					<hr>
+					<div>
+						<div class="form-group">
+							<label>Appliance Name:</label>
+							<input type="text" class="form-control">
+						</div>
 
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <div class="mx-auto">
-        	<input type="button" class="btn btn-primary font-weight-bold" value="Save">
-        </div>
-      </div>
+						<div class="form-group">
+							<label>Appliance Location:</label>
+							<input type="text" class="form-control">
+						</div>
 
-    </div>
-  </div>
+						<div class="form-group">
+							<label>Appliance Wattage:</label>
+							<input type="text" class="form-control">
+						</div>
+
+						<div class="form-group">
+							<select class="form-control">
+								<!-- TO BE APPENDED -->
+							</select>
+						</div>
+
+
+					</div>
+		    </div>
+
+		      <!-- Modal footer -->
+		    <div class="modal-footer">
+		        <div class="mx-auto">
+		        	<input type="button" class="btn btn-primary font-weight-bold" value="Save">
+		        </div>
+		    </div>
+
+	    </div>
+  	</div>
 </div>
