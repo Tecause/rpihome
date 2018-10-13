@@ -36,7 +36,6 @@
 					
 				  </div>';
 			}
-
 			
 		}
 	}
@@ -66,7 +65,7 @@
 		    <div class="modal-body">
 		    		<input type="hidden" id="applianceProcess">
 		    		<input type="hidden" id="applianceID">
-					<div>
+					<div id="appliancePicture">
 						<label id="aircon" class="radio">
 							<img src="./img/aircon.png" alt="">
 							<input type='radio' name='appPic[]' value='./img/aircon.png' id="aircon"/>

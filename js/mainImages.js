@@ -1,5 +1,8 @@
 $(document).ready(function($) {
 
+	// $("#contentHolder").load('./php/Appliances.php');
+
+
 	$(".imgDiv #applianceImg").on('mouseenter mouseleave', function(event) {
 		$(this).find('.applianceOptions').toggle();
 	});
@@ -11,6 +14,8 @@ $(document).ready(function($) {
 
 	$(".iconButton i").on('click', function(even) {
 		$("#applianceProcess").val("add");
+
+		clearModal();
 
 		$.post('./php/GetAvailableChannels.php', function(data) {
 			var _data = JSON.parse(data);
@@ -25,6 +30,7 @@ $(document).ready(function($) {
 
 	$("#saveAddAppliance").on('click', function(event) {
 		
+		var _appID = $("#applianceID").val();
 		var _pic = $("input[name='appPic[]']:checked").val();
 		var _name = $("#addApplianceName").val();
 		var _location = $("#addApplianceLocation").val();
@@ -35,16 +41,22 @@ $(document).ready(function($) {
 		if ($("#applianceProcess").val() == "add") {
 			$.post('./php/AddAppliance.php', {pic: _pic, name: _name, location: _location, wattage: _wattage, channel: _channel}, function(data, textStatus, xhr) {
 				$.notify("Appliance Successfully Added!", {position: "top center", className: "success"});
+
+				location.reload();
 			});
+
+
 		} 
 		else {
-
+			$.post('./php/UpdateAppliance.php', {appID: _appID, pic: _pic, name: _name, location: _location, wattage: _wattage, channel: _channel}, function(data) {
+				$.notify("Appliance Successfully Updated!", {position: "top center", className: "success"});
+			});
 		}
 		
 
 	});
 
-	$(".applianceOptions i").on('click', function(event) {
+	$("#edit i").on('click', function(event) {
 
 		var _appId = $(this).parent().parent().parent().siblings('#appID').val();
 
@@ -62,8 +74,40 @@ $(document).ready(function($) {
 			$("#addAppliance select")
 			.append('<option>'+ _data['channelNumber'] +'</option>');
 
+			$.post('./php/GetAvailableChannels.php', function(data) {
+				var _data = JSON.parse(data);
+	
+				for(var i = 0; i < _data.length; i++) {
+					$("#addAppliance select").append('<option>'+ _data[i] +'</option>');
+				}
+			});
+
+			$("#appliancePicture img").each(function(i, obj) {
+				if ($(this).attr('src') == _data["appPic"]) {
+					$(this).click();
+				}
+			});
+
 		});
 	});
+
+	$("#delete i").on('click', function(event) {
+		var ID = $(this).parent().parent().parent().siblings('#appID').val();
+		
+		$.post('./php/DeleteAppliance.php', {appID: ID}, function(data) {
+			$.notify("Deleted Successfully!", {position: "top center", className: "success"});
+			 
+			location.reload();
+		});
+	});
+
+	function clearModal() {
+
+		$("#applianceID").val('');
+		$("#addApplianceName").val('');
+		$("#addApplianceLocation").val('');
+		$("#addApplianceWattage").val('');
+	}
 
 
 });
