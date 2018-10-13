@@ -1,17 +1,17 @@
 <?php  
 	include("db.php");
-   session_start();
+	session_start();
 
 
-   // if(!isset($_SESSION['login_user']))
-   // {
-   //    header("location: index.php");
-   // }
+   	// if(!isset($_SESSION['login_user']))
+   	// {
+   	//    header("location: index.php");
+   	// }
 
-   //Get a counter
-   $sql = "SELECT * FROM channel WHERE channelStatus = 1";
-   $result = mysqli_query($db, $sql);
-   $count = mysqli_num_rows($result);
+   	//Get a counter
+	$sql = "SELECT * FROM channel WHERE channelStatus = 1";
+	$result = mysqli_query($db, $sql);
+	$count = mysqli_num_rows($result);
 
 	//Channel1
 	if (isset($_POST['ch1ON']))
