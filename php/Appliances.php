@@ -31,9 +31,70 @@
 					
 				  </div>';
 			}
+
+			
 		}
 	}
 
-?>	
+?>
 
+	<div class="iconButton">
+		<a href="#addAppliance">
+			<span class="toolTipText">Add Appliance</span>
+			<i class="fas fa-plus-circle" id="btnAddAppliance" data-toggle="modal" data-target="#addAppliance"></i>
+		</a>
+	</div>
+
+</div>
+
+<div class="modal fade" id="addAppliance">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <label id="aircon" for="aircon" class="radio" onclick="checkRadio(this)">
+						<img src="./img/aircon.png" alt="">
+						<input type='radio' name='appPic[]' value='./img/aircon.png' id="aircon"/>
+					</label>
+					
+					<label for="charge" class="radio" onclick="checkRadio(this)">
+						<img src="./img/charge.png" alt="">
+						<input type='radio' name='appPic[]' value='./img/charge.png' id="charge"/>
+					</label>
+
+					<label for="fan" class="radio" onclick="checkRadio(this)">
+						<img src="./img/fan.png" alt="">
+						<input type='radio' name='appPic[]' value='./img/fan.png' id="fan"/>
+					</label>
+					
+					<label for="light" class="radio" onclick="checkRadio(this)">
+						<img src="./img/light.png" alt="">
+						<input type='radio' name='appPic[]' value='./img/light.png' id="light"/>
+					</label>
+
+					<label for="ref" class="radio" onclick="checkRadio(this)">
+						<img src="./img/ref.png" alt="">
+						<input type='radio' name='appPic[]' value='./img/ref.png' id="ref"/>
+					</label>
+
+					<label for="tv" class="radio" onclick="checkRadio(this)">
+						<img src="./img/tv.png" alt="">
+						<input type='radio' name='appPic[]' value='./img/tv.png' id="tv"/>
+					</label>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
 </div>

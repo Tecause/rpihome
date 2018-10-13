@@ -1,5 +1,4 @@
 $(document).ready(function($) {
-	$("#contentHolder").load("./php/Appliances.php");
 
 	$("#contentHolder").delegate('.switch input', 'click', function(event) {
 		var name = $(this).attr("name");
@@ -8,6 +7,11 @@ $(document).ready(function($) {
 		$.post('./php/OnAndOffAppliance.php', {data: name}, function(data) {
 		 	 $("#contentHolder").load("./php/Appliances.php");
 		});
+	});
+
+
+	$("#contentHolder").delegate('#btnAddAppliance', 'click', function(event) {
+		// $.notify("YOU CLICKED ME!", {position: "top center", className: "success"});
 	});
 
 

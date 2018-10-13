@@ -666,7 +666,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/body.css">
 	<link rel="stylesheet" type="text/css" href="./css/editTemplate.css">
 	<link rel="stylesheet" type="text/css" href="./css/modalEditAppliance.css">
-	<link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css">
+		`	
 	<link rel="stylesheet" type="text/css" href="./css/mobile.css">
 	<link rel="icon" href="./img/rpihome.ico">
 	

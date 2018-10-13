@@ -6,6 +6,7 @@
 	<link rel="icon" href="./img/rpihome.ico">
 	<!-- MAIN LIBRARIES -->
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css">
 	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="./js/popper.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
@@ -14,6 +15,8 @@
 
 	<!-- ADDED -->
 	<script src="./js/OnAndOffAppliances.js"></script>
+	<!-- =============== -->
+
 </head>
 <body>
 
@@ -22,7 +25,7 @@
 		
 		<div id="contentHolder">
 			
-			<!-- <?php include './php/Appliances.php'; ?> -->
+			<?php include './php/Appliances.php'; ?>
 
 		</div>
 
