@@ -99,22 +99,22 @@
 					<div>
 						<div class="form-group">
 							<label>Appliance Name:</label>
-							<input type="text" class="form-control">
+							<input id="addApplianceName" type="text" class="form-control">
 						</div>
 
 						<div class="form-group">
 							<label>Appliance Location:</label>
-							<input type="text" class="form-control">
+							<input id="addApplianceLocation" type="text" class="form-control">
 						</div>
 
 						<div class="form-group">
 							<label>Appliance Wattage:</label>
-							<input type="text" class="form-control">
+							<input id="addApplianceWattage" type="text" class="form-control">
 						</div>
 						
 						<div class="form-group">
 							<label>Channel Number:</label>
-							<select class="form-control">
+							<select id="addApplianceChannel" class="form-control">
 								<!-- TO BE APPENDED -->
 							</select>
 						</div>
@@ -126,7 +126,7 @@
 		      <!-- Modal footer -->
 		    <div class="modal-footer">
 		        <div class="mx-auto">
-		        	<input type="button" class="btn btn-primary font-weight-bold" value="Save">
+		        	<input id="saveAddAppliance" type="button" class="btn btn-primary font-weight-bold" value="Save">
 		        </div>
 		    </div>
 
