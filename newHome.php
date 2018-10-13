@@ -20,9 +20,9 @@
 	<div class="container-fluid">
 		
 		
-		<div id="AppliancesHolder">
+		<div id="contentHolder">
 			
-			<?php include './php/Appliances.php'; ?>
+			<!-- <?php include './php/Appliances.php'; ?> -->
 
 		</div>
 
