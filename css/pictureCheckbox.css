@@ -1,0 +1,63 @@
+input[type=checkbox] {
+    display:none;
+}
+
+input[type=checkbox] + label {
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-left: 10%;
+}
+
+label#aircon{
+    margin-left: 4% !important;
+}
+
+input[type=checkbox]:checked + label {
+    height: 50px;
+    width: 50px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-right: -9.7%;
+    border-radius: 5px;
+    background: #9ea1a8;
+}
+
+
+/*Edit Appliance*/
+.inputs input[type=radio]{
+    display: none;
+}
+
+
+
+/*.inputs input[type=radio] + label{
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-left: 10%;
+}*/
+
+.inputs .radio{
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-left: 10%;
+}
+
+.inputs label#aircon{
+    margin-left: 4% !important;
+}
+
+/*.inputs input[type=radio]:checked + label {
+    height: 50px;
+    width: 50px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-right: -9.7%;
+    border-radius: 5px;
+    background: #9ea1a8;
+}*/

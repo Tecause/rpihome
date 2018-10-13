@@ -1,0 +1,47 @@
+.submit{
+	width: 100px;
+	height: 100px;
+}
+
+#imgCh1{
+	width: 100px;
+	height: 100px;
+}
+
+.button{
+	visibility: hidden;
+}
+
+.imgDiv{
+	margin-left: 5%;
+}
+
+.imgDiv i{
+	display: none;
+	position: fixed;
+	margin-top: -65px;
+	color: white;
+	font-size: 30px;
+}
+
+.imgDiv i:hover{
+	font-size: 40px;
+}
+
+.imgDiv i.fa-edit{
+	margin-left: -25px;
+}
+
+.imgDiv i.fa-times{
+	margin-left: 30px;
+}
+
+/*.imgDiv img{
+	-webkit-filter: 0.7s ease;
+	transition: 0.7s ease;
+}
+
+.imgDiv img:hover{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}*/

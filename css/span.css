@@ -1,0 +1,48 @@
+.openSideBar{
+	width: 50px;
+	height: 50px;
+	left: 0;
+	top: 0%;
+	position: fixed;
+	border: none;
+	background-color: white;
+}
+
+.templates h1{
+	position: relative;
+	color: white;
+	text-align: center;
+}
+
+.templates h4{
+	position: relative;
+	color: white;
+	margin-left: 10%;
+}
+
+#btnCreateTemplate{
+	text-align: center;
+}
+
+.templates a{
+	color: white;
+	font-size: 21px;
+}
+
+.templates a:hover{
+	font-size: 30px;
+}
+
+.templateOptions{
+	float: right;
+}
+
+.editTemplate{
+	margin-left: -40px;
+	margin-top: -40px;
+}
+
+.removeTemplate{
+	margin-top: -40px;
+	margin-left: -10px;
+}

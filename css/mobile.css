@@ -1,0 +1,271 @@
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+		
+		/*home.php css*/
+		body{
+				background: url(../img/mobilebackground.jpg) no-repeat center center fixed;
+			}
+		.logoRpi{
+			height: 120px;
+			width: 120px;
+		}
+
+    	.border{
+    		height: 70px;
+    		width: 800px;
+    		margin-left: 130px;
+    		z-index: -1;
+    	}
+
+		.logout{
+			font-family: Times;
+			font-weight: bold;
+			font-size: 30px;
+			text-decoration: none;
+			color: white;
+		}
+
+    	button{
+    		float: right;
+    		margin-top: 5px;
+    		margin-right: 5px;
+			border-style: none;
+			border-radius: 50px;
+			background-color: grey;
+			width: 140px;
+			height: 60px;
+		}
+
+		button:hover{
+			background-color: red;
+		}
+
+		.divmenu{
+			width: 100px;
+			height: 100%;
+			left: 0;
+			top: 0;
+			position: fixed;
+			border: none;
+		}
+
+		.openSideBar{
+			width: 100px;
+			height: 100px;
+			left: 0;
+			top: 0%;
+			position: fixed;
+			border: none;
+			background-color: white;
+		}
+
+		.imgDiv{
+			margin-top: 10%;
+			margin-left: 10%;
+			font-size: 40px;
+			text-align: center;
+			width: 200px;
+			height: 800px;
+		}
+
+		.imgDiv img {
+			height: 200px !important;
+			width: 200px !important;
+			margin-right: 23px;
+			margin-bottom: -70px;
+		}
+
+		.switch{
+			margin-top: 25%;
+		}
+			
+		h4{
+			margin-bottom: -20%;
+		}
+
+		.switch {
+			width: 120px;
+			height: 68px;
+		}
+
+		.slider:before {
+			height: 52px;
+			width: 52px;
+			left: 8px;
+			bottom: 8px;
+		}
+
+		input:checked + .slider:before {
+			-webkit-transform: translateX(52px);
+			-ms-transform: translateX(52px);
+			transform: translateX(52px);
+		}
+
+			/* Rounded sliders */
+		.slider.round {
+			border-radius: 68px;
+		}
+
+		.imgDiv i{
+			display: none;
+			position: fixed;
+			margin-top: -65px;
+			color: white;
+			font-size: 70px;
+		}
+
+		.imgDiv i:hover{
+			font-size: 90px;
+		}
+
+		.imgDiv i.fa-edit{
+			margin-left: -50px;
+		}
+
+		.imgDiv i.fa-times{
+			margin-left: 90px;
+		}
+
+		.iconButton{
+			margin-top: 30%;
+			margin-left: 12%;
+			float: left;
+			text-align: center;
+			width: 200px;
+			height: 520px;
+		}
+
+		.iconButton i{
+			font-size: 150px;
+			color: black;
+		}
+
+		.modalDialog div {
+		    width: 800px;
+		    height: 900px;
+		    margin-right: 9%;
+		    border-radius: 20px;
+		} 
+
+		.modal-content label{
+		    font-family: Arial, Helvetica, sans-serif;
+		    width: 200px;
+		    margin-top: 7%;
+		    margin-left: 3%;
+		}
+
+		.close {
+		    line-height: 50px;
+		    right: -24px;
+		    top: -20px;
+		    width: 48px;
+		    -webkit-border-radius: 48px;
+		    -moz-border-radius: 48px;
+		    border-radius: 48px;
+		    -moz-box-shadow: 2px 2px 6px #000;
+		    -webkit-box-shadow: 2px 2px 6px #000;
+		    box-shadow: 2px 2px 6px #000;
+		}
+
+		.modal-content input{
+		    font-family: Arial, Helvetica, sans-serif;
+		    padding: 15px;
+		    width: 90%;
+		    border-radius: 10px;
+		    margin-top: 20px;
+		    margin-bottom: 20px;
+		    margin-left: 2%;
+		    font-size: 30px;
+		}
+
+		.inputs img{
+		    width: 100px;
+		    height: 100px;
+		    margin-right: 10%;
+		}
+
+		.inputs label{
+			margin-right: 3%;
+			font-size: 30px;
+		}
+
+		select {
+		    font-family: Arial, Helvetica, sans-serif;
+		    padding: 15px;
+		    width: 94%;
+		    border-radius: 20px;
+		    margin-top: 20px;
+		    margin-bottom: 20px;
+		    margin-left: 2%;
+		    font-size: 30px;
+		    border-style: solid;
+		}
+
+		.modalEditApplianceDialog div {
+		    width: 800px;
+		    height: 900px;
+		    margin-right: 9%;
+		    border-radius: 20px;
+		}
+		
+		.modalEditAppliance-content label{
+		    font-family: Arial, Helvetica, sans-serif;
+		    width: 200px;
+		    margin-top: 7%;
+		    margin-left: 3%;
+		}
+		
+		.modalEditAppliance-content input{
+		    font-family: Arial, Helvetica, sans-serif;
+		    padding: 15px;
+		    width: 90%;
+		    border-radius: 10px;
+		    margin-top: 20px;
+		    margin-bottom: 20px;
+		    margin-left: 2%;
+		    font-size: 30px;
+		}
+		
+		.sidenav .closebtn {
+			font-size: 100px;
+			right: 30px;
+		}
+
+		.templates h1{
+			font-size: 100px;
+		}
+		.templates a{
+			font-size: 50px;
+		}
+
+		.templates a:hover{
+			font-size: 60px;
+		}
+
+		.templateOptions{
+			float: right;
+			margin-top: 30px;
+		}
+
+		.editTemplate{
+			margin-left: -180px;
+			margin-top: -110px;
+		}
+
+		.removeTemplate{
+			margin-left: -100px;
+			margin-top: -80px;
+		}
+
+		#btnCreateTemplate a{
+			font-size: 70px;
+		}
+
+		#btnCreateSchedule {
+			font-size: 70px;
+		}
+
+}
