@@ -650,7 +650,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+
 	<title>rPi Home</title>
+	<!-- Added -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<!-- =============================== -->
+
 	<link rel="stylesheet" type="text/css" href="./css/home.css">
 	<link rel="stylesheet" type="text/css" href="./css/toggleSwitch.css">
 	<link rel="stylesheet" type="text/css" href="./css/modal.css">
@@ -664,7 +669,14 @@
 	<link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css">
 	<link rel="stylesheet" type="text/css" href="./css/mobile.css">
 	<link rel="icon" href="./img/rpihome.ico">
-	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	
+	<!-- Newly Added -->
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/notify.min.js"></script>
+	<!-- ============================= -->
+
  	<script type="text/javascript" src="./js/toggle.js"></script>
 	<!-- <script type="text/javascript" src="./js/modal.js"></script> -->
 	<script type="text/javascript" src="./js/sidebar.js"></script>

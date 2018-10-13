@@ -38,9 +38,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Thesis</title>
+   <!-- Added -->
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <!-- ========================= -->
    <link rel="stylesheet" href="./css/login.css">
    <link rel="icon" href="./img/rpihome.ico">
    <link rel="stylesheet" type="text/css" href="./css/mobilelogin.css">
+
+   <!-- Newly Added -->
+   <script src="./js/jquery-3.3.1.min.js"></script>
+   <script src="./js/popper.min.js"></script>
+   <script src="./js/bootstrap.min.js"></script>
+   <script src="./js/notify.min.js"></script>
+   <!-- ============================= -->
 </head>
 <wrapper>
 <body>
@@ -73,3 +83,14 @@
 </body>
 </wrapper>
 </html>
+
+<script>
+   
+   $(document).ready(function($) {
+      $(".copy").click(function(event) {
+         $.notify("You Clicked me!", "info")
+      });
+   });
+
+
+</script>
