@@ -15,7 +15,7 @@
 						<img id="imgCh1" src="' .$data["appPic"].'">
 
 						<div class="applianceOptions">
-							<div id="edit"><i class="fas fa-edit"></i></div>
+							<div id="edit" data-toggle="modal" data-target="#addAppliance"><i class="fas fa-edit"></i></div>
 							<div id="delete"><i class="fas fa-times"></i></div>
 						</div>
 					</div>
@@ -32,7 +32,7 @@
 					</label>
 					
 
-					<input type="hidden" name="saveTransAppID'.$data["channelNumber"].'" value="'.$data["appID"].'">
+					<input id="appID" type="hidden" name="saveTransAppID'.$data["channelNumber"].'" value="'.$data["appID"].'">
 					
 				  </div>';
 			}
@@ -64,6 +64,8 @@
 
 		    <!-- Modal body -->
 		    <div class="modal-body">
+		    		<input type="hidden" id="applianceProcess">
+		    		<input type="hidden" id="applianceID">
 					<div>
 						<label id="aircon" class="radio">
 							<img src="./img/aircon.png" alt="">

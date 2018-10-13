@@ -10,6 +10,7 @@ $(document).ready(function($) {
 	});
 
 	$(".iconButton i").on('click', function(even) {
+		$("#applianceProcess").val("add");
 
 		$.post('./php/GetAvailableChannels.php', function(data) {
 			var _data = JSON.parse(data);
@@ -31,10 +32,37 @@ $(document).ready(function($) {
 		var _channel = $("#addApplianceChannel").val();
 
 		
-		$.post('./php/AddAppliance.php', {pic: _pic, name: _name, location: _location, wattage: _wattage, channel: _channel}, function(data, textStatus, xhr) {
-			$.notify("Appliance Successfully Added!", {position: "top center", className: "success"});
-		});
+		if ($("#applianceProcess").val() == "add") {
+			$.post('./php/AddAppliance.php', {pic: _pic, name: _name, location: _location, wattage: _wattage, channel: _channel}, function(data, textStatus, xhr) {
+				$.notify("Appliance Successfully Added!", {position: "top center", className: "success"});
+			});
+		} 
+		else {
 
+		}
+		
+
+	});
+
+	$(".applianceOptions i").on('click', function(event) {
+
+		var _appId = $(this).parent().parent().parent().siblings('#appID').val();
+
+		$.post('./php/GetAppliance.php', {appID: _appId}, function(data) {
+			var _data = JSON.parse(data);
+
+			$("#applianceProcess").val("edit");
+			$("#applianceID").val(_data['appID']);
+			$("#addApplianceName").val(_data['appName']);
+			$("#addApplianceLocation").val(_data['appPlace']);
+			$("#addApplianceWattage").val(_data['appWatts']);
+
+			
+			$("#addAppliance select").find('option').remove();
+			$("#addAppliance select")
+			.append('<option>'+ _data['channelNumber'] +'</option>');
+
+		});
 	});
 
 
