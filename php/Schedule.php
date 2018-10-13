@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>rPi Home</title>
+	<title>Create a Template</title>
 	<link rel="icon" href="./img/rpihome.ico">
+	
 	<!-- MAIN LIBRARIES -->
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css">
@@ -28,13 +29,11 @@
 
 </head>
 <body>
-
 	
-
-	<nav class="navbar navbar-expand-sm bg-info navbar-light sticky-top">
-		<div class="navbar-brand" href="#">
-			<img src="./img/rpi.jpg" alt="Logo" style="width:50px;">
-		</div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+   			<div class="navbar-brand" href="#">
+    			<img src="./img/rpi.jpg" alt="Logo" style="width:50px;">
+			</div>
 			<ul class="navbar-nav font-weight-bold">
 			    <li class="nav-item">
 			    	<a class="nav-link" href="#">Digital Switch</a>
@@ -50,24 +49,13 @@
 			    </li>
 			</ul>
 
-			<a id="logout" class="nav-link ml-auto" href="./newIndex.php">Logout</a>
+			<a id="logout" class="nav-link ml-auto font-weight-bold" href="./newIndex.php">Logout</a>
 	</nav>
 
 
 
 
 
-	<div class="container-fluid">
-		
-		
-		<div id="contentHolder">
-			
-			<?php include './php/Appliances.php'; ?>
 
-		</div>
-
-
-	</div>
-	
 </body>
-</html>
+</html>	
