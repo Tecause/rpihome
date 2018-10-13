@@ -8,25 +8,14 @@
 	height: 100px;
 }
 
-/* .button{
-	visibility: hidden;
-} */
+div.modal-body input[type=radio]{
+    display: none;
+}
 
-/* .imgDiv{
-	margin-left: 5%;
-} */
-
-/* .imgDiv i{
-	display: none;
-	position: fixed;
-	margin-top: -65px;
-	color: white;
-	font-size: 30px;
-} */
-
-/* .imgDiv i:hover{
-	font-size: 40px;
-} */
+div.modal-body label img {
+	width: 50px;
+	height: 50px;
+}
 
 .imgDiv .applianceOptions {
 	display: none;

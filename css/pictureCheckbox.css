@@ -10,9 +10,9 @@ input[type=checkbox] + label {
     margin-left: 10%;
 }
 
-label#aircon{
+/* label#aircon{
     margin-left: 4% !important;
-}
+} */
 
 input[type=checkbox]:checked + label {
     height: 50px;
@@ -52,9 +52,9 @@ input[type=checkbox]:checked + label {
     margin-left: 10%;
 }
 
-.inputs label#aircon{
+/* .inputs label#aircon{
     margin-left: 4% !important;
-}
+} */
 
 /*.inputs input[type=radio]:checked + label {
     height: 50px;

@@ -17,7 +17,6 @@
 	<link rel="stylesheet" type="text/css" href="./css/home.css">
 	<link rel="stylesheet" type="text/css" href="./css/body.css">
 	<link rel="stylesheet" type="text/css" href="./css/toggleSwitch.css">
-	<!-- <link rel="stylesheet" type="text/css" href="./css/pictureCheckbox.css"> -->
 	<!-- =============== -->
 
 	<!-- ADDED JS -->

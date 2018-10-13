@@ -10,12 +10,14 @@
 
 			while ($data = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 				echo '<div class="imgDiv">
-						
-					<img id="imgCh1" src="' .$data["appPic"].'">
+					
+					<div id="applianceImg">
+						<img id="imgCh1" src="' .$data["appPic"].'">
 
-					<div class="applianceOptions">
-						<i class="fas fa-edit"></i>
-						<i class="fas fa-times"></i>
+						<div class="applianceOptions">
+							<i class="fas fa-edit"></i>
+							<i class="fas fa-times"></i>
+						</div>
 					</div>
 
 					<h4>'. $data["appPlace"] .'</h4>
@@ -62,40 +64,44 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-			<label id="aircon" for="aircon" class="radio" onclick="checkRadio(this)">
-				<img src="./img/aircon.png" alt="">
-				<input type='radio' name='appPic[]' value='./img/aircon.png' id="aircon"/>
-			</label>
-			
-			<label for="charge" class="radio" onclick="checkRadio(this)">
-				<img src="./img/charge.png" alt="">
-				<input type='radio' name='appPic[]' value='./img/charge.png' id="charge"/>
-			</label>
-
-			<label for="fan" class="radio" onclick="checkRadio(this)">
-				<img src="./img/fan.png" alt="">
-				<input type='radio' name='appPic[]' value='./img/fan.png' id="fan"/>
-			</label>
-			
-			<label for="light" class="radio" onclick="checkRadio(this)">
-				<img src="./img/light.png" alt="">
-				<input type='radio' name='appPic[]' value='./img/light.png' id="light"/>
-			</label>
-
-			<label for="ref" class="radio" onclick="checkRadio(this)">
-				<img src="./img/ref.png" alt="">
-				<input type='radio' name='appPic[]' value='./img/ref.png' id="ref"/>
-			</label>
-
-			<label for="tv" class="radio" onclick="checkRadio(this)">
-				<img src="./img/tv.png" alt="">
-				<input type='radio' name='appPic[]' value='./img/tv.png' id="tv"/>
-			</label>
+			<div>
+				<label id="aircon" for="aircon" class="radio">
+					<img src="./img/aircon.png" alt="">
+					<input type='radio' name='appPic[]' value='./img/aircon.png' id="aircon"/>
+				</label>
+				
+				<label for="charge" class="radio">
+					<img src="./img/charge.png" alt="">
+					<input type='radio' name='appPic[]' value='./img/charge.png' id="charge"/>
+				</label>
+				
+				<label for="fan" class="radio">
+					<img src="./img/fan.png" alt="">
+					<input type='radio' name='appPic[]' value='./img/fan.png' id="fan"/>
+				</label>
+				
+				<label for="light" class="radio">
+					<img src="./img/light.png" alt="">
+					<input type='radio' name='appPic[]' value='./img/light.png' id="light"/>
+				</label>
+				
+				<label for="ref" class="radio">
+					<img src="./img/ref.png" alt="">
+					<input type='radio' name='appPic[]' value='./img/ref.png' id="ref"/>
+				</label>
+				
+				<label for="tv" class="radio">
+					<img src="./img/tv.png" alt="">
+					<input type='radio' name='appPic[]' value='./img/tv.png' id="tv"/>
+				</label>
+			</div>
       </div>
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <div class="mx-auto">
+        	<input type="button" class="btn btn-primary font-weight-bold" value="Save">
+        </div>
       </div>
 
     </div>
