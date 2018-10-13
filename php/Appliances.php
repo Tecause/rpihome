@@ -111,8 +111,9 @@
 							<label>Appliance Wattage:</label>
 							<input type="text" class="form-control">
 						</div>
-
+						
 						<div class="form-group">
+							<label>Channel Number:</label>
 							<select class="form-control">
 								<!-- TO BE APPENDED -->
 							</select>
