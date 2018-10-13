@@ -13,7 +13,7 @@
 						
 					<img id="imgCh1" src="' .$data["appPic"].'">
 
-					<a href="home.php?editApplianceName='.md5($data["appName"]).'" class="editTemplate" name="editTemplate"><i class="fas fa-edit"></i></a> <a href="home.php?removeApplianceName='.md5($data["appName"]).'" class="removeTemplate" name="removeTemplate" onclick="return removeTemplate();"><i class="fa fa-times"></i></a>
+					<a href="home.php?editApplianceName='.md5($data["appName"]).'" class="editTemplate" name="editTemplate"><i class="fas fa-edit"></i></a> <a href="home.php?removeApplianceName='.md5($data["appName"]).'" class="removeTemplate" name="removeTemplate" onclick="return removeTemplate();"><i class="fas fa-times"></i></a>
 
 					<h4>'. $data["appPlace"] .'</h4>
 
@@ -59,7 +59,7 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-        <label id="aircon" for="aircon" class="radio" onclick="checkRadio(this)">
+       				<label id="aircon" for="aircon" class="radio" onclick="checkRadio(this)">
 						<img src="./img/aircon.png" alt="">
 						<input type='radio' name='appPic[]' value='./img/aircon.png' id="aircon"/>
 					</label>

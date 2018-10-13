@@ -7,6 +7,17 @@
 	<!-- MAIN LIBRARIES -->
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="./css/fontawesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/home.css">
+	<link rel="stylesheet" type="text/css" href="./css/body.css">
+	<link rel="stylesheet" type="text/css" href="./css/toggleSwitch.css">
+	<link rel="stylesheet" type="text/css" href="./css/modalEditAppliance.css">
+	<link rel="stylesheet" type="text/css" href="./css/modal.css">
+	<link rel="stylesheet" type="text/css" href="./css/createTemplate.css">
+	<link rel="stylesheet" type="text/css" href="./css/editTemplate.css">
+	<link rel="stylesheet" type="text/css" href="./css/pictureCheckbox.css">
+
+
 	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="./js/popper.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
