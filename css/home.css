@@ -8,32 +8,32 @@
 	height: 100px;
 }
 
-.button{
+/* .button{
 	visibility: hidden;
-}
+} */
 
-.imgDiv{
+/* .imgDiv{
 	margin-left: 5%;
-}
+} */
 
-.imgDiv i{
+/* .imgDiv i{
 	display: none;
 	position: fixed;
 	margin-top: -65px;
 	color: white;
 	font-size: 30px;
-}
+} */
 
-.imgDiv i:hover{
+/* .imgDiv i:hover{
 	font-size: 40px;
+} */
+
+.imgDiv .applianceOptions {
+	display: none;
 }
 
-.imgDiv i.fas fa-edit{
-	margin-left: -25px;
-}
-
-.imgDiv i.fas fa-times{
-	margin-left: 300px;
+.imgDiv img:hover .applianceOptions {
+	display: inline;
 }
 
 .imgDiv img{

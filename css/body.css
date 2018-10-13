@@ -29,7 +29,7 @@ body{
 	color: white;
 }
 
-button{
+/* button{
 	float: right;
 	border-style: none;
 	border-radius: 50px;
@@ -39,7 +39,7 @@ button{
 
 button:hover{
 	background-color: red;
-}
+} */
 
 .logoBG{
 	position: fixed;

@@ -9,11 +9,14 @@
 		if ($result = mysqli_query($db, $sql)) {
 
 			while ($data = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-				echo '<div class="imgDiv" onmouseover="showOptions(this)" onmouseleave="hideOptions(this)">
+				echo '<div class="imgDiv">
 						
 					<img id="imgCh1" src="' .$data["appPic"].'">
 
-					<a href="home.php?editApplianceName='.md5($data["appName"]).'" class="editTemplate" name="editTemplate"><i class="fas fa-edit"></i></a> <a href="home.php?removeApplianceName='.md5($data["appName"]).'" class="removeTemplate" name="removeTemplate" onclick="return removeTemplate();"><i class="fas fa-times"></i></a>
+					<div class="applianceOptions">
+						<i class="fas fa-edit"></i>
+						<i class="fas fa-times"></i>
+					</div>
 
 					<h4>'. $data["appPlace"] .'</h4>
 
@@ -54,40 +57,40 @@
       <!-- Modal Header -->
       <div class="modal-header">
         <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <span class="close" data-dismiss="modal">&times;</span>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-       				<label id="aircon" for="aircon" class="radio" onclick="checkRadio(this)">
-						<img src="./img/aircon.png" alt="">
-						<input type='radio' name='appPic[]' value='./img/aircon.png' id="aircon"/>
-					</label>
-					
-					<label for="charge" class="radio" onclick="checkRadio(this)">
-						<img src="./img/charge.png" alt="">
-						<input type='radio' name='appPic[]' value='./img/charge.png' id="charge"/>
-					</label>
+			<label id="aircon" for="aircon" class="radio" onclick="checkRadio(this)">
+				<img src="./img/aircon.png" alt="">
+				<input type='radio' name='appPic[]' value='./img/aircon.png' id="aircon"/>
+			</label>
+			
+			<label for="charge" class="radio" onclick="checkRadio(this)">
+				<img src="./img/charge.png" alt="">
+				<input type='radio' name='appPic[]' value='./img/charge.png' id="charge"/>
+			</label>
 
-					<label for="fan" class="radio" onclick="checkRadio(this)">
-						<img src="./img/fan.png" alt="">
-						<input type='radio' name='appPic[]' value='./img/fan.png' id="fan"/>
-					</label>
-					
-					<label for="light" class="radio" onclick="checkRadio(this)">
-						<img src="./img/light.png" alt="">
-						<input type='radio' name='appPic[]' value='./img/light.png' id="light"/>
-					</label>
+			<label for="fan" class="radio" onclick="checkRadio(this)">
+				<img src="./img/fan.png" alt="">
+				<input type='radio' name='appPic[]' value='./img/fan.png' id="fan"/>
+			</label>
+			
+			<label for="light" class="radio" onclick="checkRadio(this)">
+				<img src="./img/light.png" alt="">
+				<input type='radio' name='appPic[]' value='./img/light.png' id="light"/>
+			</label>
 
-					<label for="ref" class="radio" onclick="checkRadio(this)">
-						<img src="./img/ref.png" alt="">
-						<input type='radio' name='appPic[]' value='./img/ref.png' id="ref"/>
-					</label>
+			<label for="ref" class="radio" onclick="checkRadio(this)">
+				<img src="./img/ref.png" alt="">
+				<input type='radio' name='appPic[]' value='./img/ref.png' id="ref"/>
+			</label>
 
-					<label for="tv" class="radio" onclick="checkRadio(this)">
-						<img src="./img/tv.png" alt="">
-						<input type='radio' name='appPic[]' value='./img/tv.png' id="tv"/>
-					</label>
+			<label for="tv" class="radio" onclick="checkRadio(this)">
+				<img src="./img/tv.png" alt="">
+				<input type='radio' name='appPic[]' value='./img/tv.png' id="tv"/>
+			</label>
       </div>
 
       <!-- Modal footer -->
