@@ -58,49 +58,65 @@
 <body>
 
 
-  <div class="container">
-      <br><br><h2>WELCOME to Raspberry Pi Home</h2><br>
-    
-      <!-- Button to Open the Modal -->
-      <button type="button" class="btn btn-primary ml-auto" data-toggle="modal" data-target="#myModal">Have an Account?</button>
-  </div>
+<div class="container">
+  <br><br><h2>WELCOME to Raspberry Pi Home</h2><br>
 
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Login</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary ml-auto" data-toggle="modal" data-target="#loginmodal">Have an Account?</button>
 
-			<div class="container">
-		  		<form action="newHome.php">
-		    		<div class="form-group">
-		      			<label for="usr">Username</label>
-		      			<input type="text" class="form-control" id="usr" name="username">
-		    		</div>
-		    		<div class="form-group">
-		      			<label for="pwd">Password</label>
-		      			<input type="password" class="form-control" id="pwd" name="password">
-		    		</div>
-		    		<center><button type="submit" class="btn btn-primary">Submit</button>
-		  		</form>
-			</div>
+  <button type="button" class="btn btn-link" data-toggle="modal" data-target="#contactadmin">No</button>
+
+<!-- The Modal -->
+<div class="modal fade" id="loginmodal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">Login</h4>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="container">
+          <form action="newHome.php">
+            <div class="form-group">
+              <label for="usr">Username</label>
+              <input type="text" class="form-control" id="usr" name="username">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password</label>
+              <input type="password" class="form-control" id="pwd" name="password">
+            </div>
+            <center><button type="submit" class="btn btn-primary">Submit</button></center>
+          </form>
         </div>
-        
-        
       </div>
     </div>
   </div>
-  
 </div>
+
+<!-- The Modal -->
+<div class="modal fade" id="contactadmin">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">Administrator permission required</h4>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="container">
+          <p>Contact your administrator to Register</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
 
 
 

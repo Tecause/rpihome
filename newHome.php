@@ -49,22 +49,98 @@
 
                           
 			<div class="dropdown">
-		    	<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Settings<span class="caret"></span></button>
+		    	<button class="btn btn-info font-weight-bold dropdown-toggle" type="button" data-toggle="dropdown">Settings<span class="caret"></span></button>
 		    	<ul class="dropdown-menu">
-			      	<li><a href="#">HTML</a></li>
-			      	<li><a href="#">CSS</a></li>
-			      	<li><a href="#">JavaScript</a></li>
+			      	<li><a data-toggle="modal" data-target="#changepassword" href="#">Change Password</a></li>
+			      	<li><a data-toggle="modal" data-target="#adduser" href="#">New user</a></li>
 		   		</ul>
 			</div>
-		
+	
 
-			<a id="logout" class="nav-link ml-auto" href="./newIndex.php">Logout</a>
-		</div> 
+			<a id="logout" class="nav-link ml-auto" href="./newIndex.php">Logout</a> 
 	</nav>
 
 
 
+<div class="modal fade" id="changepassword">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
 
+			<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Change Password</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<div class="container">
+						<form action="newHome.php">
+							<div class="form-group">
+
+								<label for="usr">Old Password</label>
+								<input type="text" class="form-control" id="oldpassword" name="oldpassword">
+							</div>
+							<div class="form-group">
+								<label for="pwd">New Password</label>
+								<input type="password" class="form-control" id="newpassword" name="newpassword">
+							</div>
+							<div class="form-group">
+								<label for="pwd">Verify New Password</label>
+								<input type="password" class="form-control" id="verify" name="verify">
+							</div>
+						<center><button type="submit" class="btn btn-primary">Submit</button></center>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="modal fade" id="adduser">
+    <div class="modal-dialog modal-dialog-centered">
+    	<div class="modal-content">
+      
+	        <!-- Modal Header -->
+	        <div class="modal-header">
+	          <h4 class="modal-title">Add New User</h4>
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        </div>
+	        
+	        <!-- Modal body -->
+	        <div class="modal-body">
+	        	<div class="container">
+	  		  		<form action="newHome.php">
+	  		  			<div class="form-group">
+	  		      			<label for="pwd">Administrator Password</label>
+	  		      			<input type="password" class="form-control" id="adminpassword" name="adminpassword">
+	  		    		</div>
+	  		  			<div class="form-group">
+	  		      			<label for="usr">Name</label>
+	  		      			<input type="text" class="form-control" id="name" name="name">
+	  		    		</div>
+	  		    		<div class="form-group">
+	  		      			<label for="usr">Username</label>
+	  		      			<input type="text" class="form-control" id="username" name="username">
+	  		    		</div>
+	  		    		<div class="form-group">
+	  		      			<label for="pwd">Password</label>
+	  		      			<input type="password" class="form-control" id="password" name="password">
+	  		    		</div>
+	  		    		<center><button type="submit" class="btn btn-primary">Submit</button></center>
+	  		  		</form>
+	  		  	</div>
+	  		</div>
+		</div>
+	</div>
+</div>
+        
+
+
+<!-- ================================================================ -->
 
 	<div class="container-fluid">
 		

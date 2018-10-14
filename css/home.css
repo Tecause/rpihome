@@ -68,8 +68,10 @@ div.modal-body label img {
 li{
 	padding: 10px;
 	margin-left: 10px;
+	color: black;
 }
 
 .dropdown button{
 	color: black;
+	margin-left: 10px;
 }
