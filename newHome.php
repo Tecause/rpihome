@@ -30,7 +30,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-sm bg-info navbar-light fixed-top">
+	<nav class="navbar navbar-expand-sm bg-info navbar-light fixed-top sticky-top">
 		<div class="navbar-brand" href="#">
 			<img src="./img/rpi.jpg" alt="Logo" style="width:40px;">
 		</div>
@@ -51,7 +51,7 @@
 			    <li class="nav-item" id="linkTemplates">
 			     	<a class="nav-link" href="#templates">Templates</a>
 			    </li>
-			    <li class="nav-item">
+			    <li class="nav-item" id="linkScheduling">
 			     	<a class="nav-link" href="#">Scheduling</a>
 			    </li>
 			</ul>
