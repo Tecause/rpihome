@@ -18,6 +18,7 @@
 				<input id="ActivateTemplate" type="button" class="btn btn-success" value="Activate"><br>
 				<input id="EditTemplate" type="button" class="btn btn-warning" value="Edit">
 				<input id="DeleteTemplate" type="button" class="btn btn-danger" value="Delete">
+				<input id="modalPopUpAddTemplate" type="button" class="btn btn-primary" value="Add Template" data-toggle="modal" data-target="#modalAddTemplate">
 
 			</div>
 
@@ -31,5 +32,41 @@
 
 
 	</div>
+
+</div>
+
+<div class="modal fade" id="modalAddTemplate">
+
+	<div class="modal-dialog">
+		
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<h1>Add Template</h1>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+
+			<div class="modal-body" id="modalBodyAddTemplate">
+				
+
+			</div>
+
+			<div class="modal-footer">
+				<div class="mx-auto">
+					<div class="form-group">
+						<input type="text" id="addTemplateName" class="form-control" placeholder="Template Name...">
+					</div>
+					<div class="form-group">
+						<input type="button" id="addTemplateSave" class="form-control btn btn-primary" value="Save Template">
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+	
 
 </div>
