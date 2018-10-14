@@ -1,44 +1,13 @@
-<?php
-   include("db.php");
-   session_start();
+<?php  
+  include './db.php';
+  session_start();
 
-   if(isset($_SESSION['login_user']))
-   {
-      header("location: newHome.php");
-   }  
+  if(isset($_SESSION['login_user']))
+  {
+    header("location: newHome.php");
+  }  
 
-
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
-      // username and password sent from form 
-      
-      $username = mysqli_real_escape_string($db,$_POST['username']);
-      $password = mysqli_real_escape_string($db,$_POST['password']); 
-      
-      $sql = "SELECT * FROM users WHERE username = '$username' and password = '$password'";
-      $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      
-      $count = mysqli_num_rows($result);
-      
-      // If result matched $myusername and $mypassword, table row must be 1 row
-      
-      if($count == 1) {
-         $_SESSION['login_user'] = $username;
-         
-         header("location: newHome.php");
-      }else {
-         $error = "Your Login Name or Password is invalid";
-        echo '<script type="text/javascript"> alert ("'.$error.'")</script>';
-      }
-   }
 ?>
-
-
-
-
-
-
-
 
 <!DOCTYPE html>
 <html>
@@ -54,6 +23,7 @@
 	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="./js/popper.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
+  <script src="./js/notify.min.js"></script>
 </head>
 <body>
 
@@ -80,7 +50,7 @@
       <!-- Modal body -->
       <div class="modal-body">
         <div class="container">
-          <form action="newHome.php">
+          <form>
             <div class="form-group">
               <label for="usr">Username</label>
               <input type="text" class="form-control" id="usr" name="username">
@@ -89,7 +59,9 @@
               <label for="pwd">Password</label>
               <input type="password" class="form-control" id="pwd" name="password">
             </div>
-            <center><button type="submit" class="btn btn-primary">Submit</button></center>
+            <center>
+              <input id="login" type="button" class="btn btn-primary" value="Submit">
+            </center>
           </form>
         </div>
       </div>
@@ -119,9 +91,27 @@
 </div>  
 
 
-
-	
-
-
 </body>
 </html>
+
+<script>
+  $(document).ready(function($) {
+    $("#login").click(function(event) {
+      $.post('./php/Login.php', {username: $("#usr").val(), password: $("#pwd").val()}, function(data) {
+          var _data = JSON.parse(data);
+
+          if (_data == "fail") {
+            $.notify("Login Failed!", {position: "top center", className: "error"});
+          }
+          else {
+            $.notify("Login Successful!", {position: "top center", className: "success"});
+
+            setTimeout(function() {
+              window.location.href = "./newHome.php";
+            }, 1000);   
+          }
+      });
+    });
+  });
+
+</script>
