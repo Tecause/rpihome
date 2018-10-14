@@ -4,6 +4,8 @@
 <script src="./JqueryClock/bootstrap-clockpicker.min.js"></script>
 <script src="./JqueryClock/jquery-clockpicker.min.js"></script>
 
+<script src="./js/SchedulingNavigation.js"></script>
+
 
 <div id="SchedulingPage" class="mt-xl-5">
 
@@ -24,7 +26,7 @@
 <!-- TIME -->
 		<div class="input-group clockpicker">
 			<h4>On Time:</h4>
-		    <input type="text" class="form-control" value="09:30">
+		    <input id="onTime" type="text" class="form-control" value="09:30">
 		    <span class="input-group-addon">
 		        <span class="glyphicon glyphicon-time"></span>
 		    </span>
@@ -32,13 +34,29 @@
 
 		<div class="input-group clockpicker">
 			<h4>Off Time:</h4>
-		    <input type="text" class="form-control" value="09:30">
+		    <input id="offTime" type="text" class="form-control" value="09:30">
 		    <span class="input-group-addon">
 		        <span class="glyphicon glyphicon-time"></span>
 		    </span>
-		</div>
-		
+		</div>	
 <!-- ==================== -->
+
+
+		<div class="btn-group">
+			
+			<input type="button" class="btn border-primary btn-outline-primary" value="Sunday">
+			<input type="button" class="btn border-primary btn-outline-primary" value="Monday">
+			<input type="button" class="btn border-primary btn-outline-primary" value="Tuesday">
+			<input type="button" class="btn border-primary btn-outline-primary" value="Wednesday">
+			<input type="button" class="btn border-primary btn-outline-primary" value="Thursday">
+			<input type="button" class="btn border-primary btn-outline-primary" value="Friday">
+			<input type="button" class="btn border-primary btn-outline-primary" value="Saturday">
+
+		</div>
+
+		<div>
+			<input id="btnSaveSchedule" type="button" class="btn btn-success text-white" value="Save!">
+		</div>
 
 	</div>
 
