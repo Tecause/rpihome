@@ -36,20 +36,26 @@ $(document).ready(function($) {
 		var _location = $("#addApplianceLocation").val();
 		var _wattage = $("#addApplianceWattage").val();
 		var _channel = $("#addApplianceChannel").val();
-
 		
 		if ($("#applianceProcess").val() == "add") {
-			$.post('./php/AddAppliance.php', {pic: _pic, name: _name, location: _location, wattage: _wattage, channel: _channel}, function(data, textStatus, xhr) {
+			$.post('./php/AddAppliance.php', {pic: _pic, name: _name, location: _location, wattage: _wattage, channel: _channel}, function(data) {
 				$.notify("Appliance Successfully Added!", {position: "top center", className: "success"});
 
-				location.reload();
+				setTimeout(function() {
+					location.reload();
+				}, 1000);
+				
 			});
 
 
 		} 
-		else {
+		else if ($("#applianceProcess").val() == "edit"){
 			$.post('./php/UpdateAppliance.php', {appID: _appID, pic: _pic, name: _name, location: _location, wattage: _wattage, channel: _channel}, function(data) {
 				$.notify("Appliance Successfully Updated!", {position: "top center", className: "success"});
+
+				setTimeout(function() {
+					location.reload();
+				}, 1000);
 			});
 		}
 		
