@@ -4,7 +4,11 @@
 .templateMenu input {
 	width: 30%;
 	font-weight: bold;
-	font-size: ;
+	font-size: 20px;
+}
+
+#templateNames {
+	margin-top: 6%;
 }
 	
 
@@ -13,7 +17,7 @@
 
 <div style="width: 100%;">
 	
-	<div id="templateNames" class="col-3 mx-auto mt-lg-5">
+	<div id="templateNames" class="col-3 mx-auto">
 		
 		<h3 class="font-weight-bold">Choose Template:</h3>
 		<div class="form-group">
