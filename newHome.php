@@ -30,11 +30,21 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-sm bg-info navbar-light sticky-top">
+	<nav class="navbar navbar-expand-sm bg-info navbar-light fixed-top">
 		<div class="navbar-brand" href="#">
 			<img src="./img/rpi.jpg" alt="Logo" style="width:40px;">
 		</div>
-			<ul class="navbar-nav font-weight-bold">
+
+
+<!-- ==========================RESPONSIVE NAVBAR==================================== -->
+
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+	<div class="navbar-collapse collapse show" id="navbarCollapse" style="">
+        <ul class="navbar-nav font-weight-bold mr-auto">
 			    <li class="nav-item" id="linkHome">
 			    	<a class="nav-link" href="#">Digital Switch</a>
 			    </li>
@@ -45,18 +55,26 @@
 			     	<a class="nav-link" href="#">Scheduling</a>
 			    </li>
 			</ul>
-
-                          
-			<div class="dropdown">
+        <form class="form-inline mt-2 mt-0">
+          <div class="dropdown">
 		    	<button class="btn btn-info font-weight-bold dropdown-toggle" type="button" data-toggle="dropdown">Settings<span class="caret"></span></button>
 		    	<ul class="dropdown-menu">
 			      	<li><a data-toggle="modal" data-target="#changepassword" href="#">Change Password</a></li>
 			      	<li><a data-toggle="modal" data-target="#adduser" href="#">New user</a></li>
+			      	<li><a href="./newIndex.php">Logout</a></li>
 		   		</ul>
 			</div>
+        </form>
+    </div>
+
+
+			
+
+                          
+			
 	
 
-			<a id="logout" class="nav-link ml-auto" href="./newIndex.php">Logout</a> 
+			 
 	</nav>
 
 
