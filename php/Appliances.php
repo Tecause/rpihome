@@ -57,7 +57,7 @@
 
 		    <!-- Modal Header -->
 		    <div class="modal-header">
-		    	<h4 class="modal-title">Modal Heading</h4>
+		    	<h4 class="modal-title">Appliances</h4>
 		        <span class="close" data-dismiss="modal">&times;</span>
 		    </div>
 

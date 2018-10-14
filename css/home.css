@@ -89,7 +89,7 @@ li{
 
 .iconButton span{
 	margin-top: 120px;
-	margin-left: -55px;
+	margin-left: -60px;
 }
 
 #templateNames h3{
@@ -98,20 +98,32 @@ li{
 }
 
 #ActivateTemplate{
-	width: 200px;
+	width: 395px;
+	height: 70px;
 	margin-bottom: 10px;
 }
 
+#modalPopUpAddTemplate{
+	width: 129px;
+}
+
 #EditTemplate{
-	width: 95px;
-	margin-right: 5px;
+	width: 129px;
 }
 
 #DeleteTemplate{
-	width: 95px;
+	width: 129px;
 }
 
 .templateMenu input {
 	font-weight: bold;
 	font-size: 20px;
+}
+
+#appliancePicture label{
+	margin-left: 20px;
+}
+
+#templateList{
+	height: 50px;
 }
