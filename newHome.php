@@ -21,26 +21,25 @@
 	<!-- =============== -->
 
 	<!-- ADDED JS -->
-	<script src="./js/OnAndOffAppliances.js"></script>
+	<script type="text/javascript" src="./js/OnAndOffAppliances.js"></script>
 	<script type="text/javascript" src="./js/mainImages.js"></script>
+	<script type="text/javascript" src="./js/MenuNavigation.js"></script>
 	<!-- =============== -->
 
 
 </head>
 <body>
 
-	
-
 	<nav class="navbar navbar-expand-sm bg-info navbar-light sticky-top">
 		<div class="navbar-brand" href="#">
 			<img src="./img/rpi.jpg" alt="Logo" style="width:40px;">
 		</div>
 			<ul class="navbar-nav font-weight-bold">
-			    <li class="nav-item">
+			    <li class="nav-item" id="linkHome">
 			    	<a class="nav-link" href="#">Digital Switch</a>
 			    </li>
-			    <li class="nav-item">
-			     	<a class="nav-link" href="#">Templates</a>
+			    <li class="nav-item" id="linkTemplates">
+			     	<a class="nav-link" href="#templates">Templates</a>
 			    </li>
 			    <li class="nav-item">
 			     	<a class="nav-link" href="#">Scheduling</a>

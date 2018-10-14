@@ -12,18 +12,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Welcome to Raspberry Pi Home</title>
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
-
-
-	<script src="./js/jquery-3.3.1.min.js"></script>
-	<script src="./js/popper.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
+  <link rel="icon" href="./img/rpihome.ico">
+	
+	<!-- MAIN LIBRARIES -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
   <script src="./js/notify.min.js"></script>
+  <!-- =============== -->
 </head>
 <body>
 
