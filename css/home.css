@@ -1,6 +1,6 @@
-#logout{
+/*#logout{
 	color: black;
-}
+}*/
 
 .submit{
 	width: 100px;
@@ -74,4 +74,5 @@ li{
 .dropdown button{
 	color: black;
 	margin-left: 10px;
+	font-size: 20px;
 }
