@@ -52,7 +52,7 @@
 			     	<a class="nav-link" href="#templates">Templates</a>
 			    </li>
 			    <li class="nav-item" id="linkScheduling">
-			     	<a class="nav-link" href="#">Scheduling</a>
+			     	<a class="nav-link" href="#schedule">Scheduling</a>
 			    </li>
 			</ul>
         <form class="form-inline my-0 my-2">
