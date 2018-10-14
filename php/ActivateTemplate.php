@@ -1,6 +1,8 @@
 <?php  
 
 	if (isset($_POST)) {
+
+		include './db.php';
 		
 		$sql = "SELECT templateSettings FROM templates WHERE templateName = '".$_POST["templateName"]."'";
 		$result = mysqli_query($db,$sql);
@@ -23,8 +25,7 @@
 			}  
 		}
 
-		// header("location: home.php");
-	}	
+	}
 
 
 ?>
