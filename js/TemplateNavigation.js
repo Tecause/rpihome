@@ -24,24 +24,33 @@ $(document).ready(function($) {
 			$(this).val("Save");
 		}
 		else if ($(this).val() == "Save") {
-
-			$newSettings = "";
+			var newSettings = $("#templateSettings").val();			
 
 			$("#templateContent .switch input").each(function(index, el) {
-				
+
+				var num = $(this).attr('name').match(/\d+/) - 1;
+				// alert(oldSettings.replaceAt(num, "1"));
+
 				if ($(this).is(":checked")) {
-					$newSettings += "1";
+					newSettings = newSettings.replaceAt(num, "1");
+
 				}
 				else {
-					$newSettings += "0";
+					newSettings = newSettings.replaceAt(num, "0");
 				}
 
 			});
 
-			alert($newSettings);
-
+			$.post('./php/UpdateTemplate.php', {settings: newSettings, templateName: $("#templateList").val()}, function(data) {
+				$.notify("Template Saved!", {position: "top center", className: "success"});
+			});
+			
 		}
 
 	});
+
+	String.prototype.replaceAt=function(index, replacement) {
+	    return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
+	}
 
 });

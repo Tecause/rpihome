@@ -15,6 +15,8 @@
 			$loadTemplateSettings = mysqli_fetch_array($result);
 			$loadTemplateSettings = $loadTemplateSettings[0];
 
+			echo '<input type="hidden" id="templateSettings" value="'.$loadTemplateSettings.'">';
+
 			///////////////////////////////////////////////////////////////////
 			$sql = "SELECT appID, appName, appPlace, appWatts, appPic, appliances.channelNumber, channelStatus FROM appliances LEFT JOIN channel ON appliances.channelNumber = channel.channelNumber ORDER BY channelNumber";
 				
