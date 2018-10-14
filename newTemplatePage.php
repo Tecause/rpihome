@@ -25,7 +25,7 @@
 			<div class="templateMenu mt-2 ml-4">
 			
 				<input id="ActivateTemplate" type="button" class="btn btn-success" value="Activate">
-				<input type="button" class="btn btn-warning" value="Edit">
+				<input id="EditTemplate" type="button" class="btn btn-warning" value="Edit">
 				<input type="button" class="btn btn-danger" value="Delete">
 
 			</div>

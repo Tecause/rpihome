@@ -1,4 +1,4 @@
-<div>
+<div class="digitalSwitch">
 
 <?php  
 	include './db.php';

@@ -1,6 +1,6 @@
 $(document).ready(function($) {
 
-	$("#contentHolder").delegate('.switch input', 'click', function(event) {
+	$("#contentHolder").delegate('.digitalSwitch .switch input', 'click', function(event) {
 		var name = $(this).attr("name");
 		// $.notify(name, {position: "top center", className: "success"});
 

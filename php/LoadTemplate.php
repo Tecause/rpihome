@@ -38,7 +38,6 @@
 					$i++;
 				}
 
-				echo '<script type="text/javascript"> openEditTemplate(); </script>';
 			}
 		}
 
