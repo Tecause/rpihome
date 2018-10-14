@@ -38,7 +38,7 @@ div.modal-body label img {
 	filter: blur(10px);
 }
 
-.imgDiv{
+.digitalSwitch .imgDiv{
 	padding-top: 100px;
 }
 
@@ -71,14 +71,16 @@ div.modal-body label img {
 
 li{
 	padding: 10px;
-	margin-left: 10px;
 	color: black;
 }
 
-.dropdown button{
-	color: black;
-	margin-left: 60px;
-	font-size: 15px;
+.dropdown .btn{
+	color: gray;
+	font-size: 16px;
+}
+
+.dropdown-menu{
+	margin-left: -55px;
 }
 
 .iconButton i{
@@ -88,4 +90,28 @@ li{
 .iconButton span{
 	margin-top: 120px;
 	margin-left: -55px;
+}
+
+#templateNames h3{
+	margin-top: 100px;
+	text-align: center;
+}
+
+#ActivateTemplate{
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+#EditTemplate{
+	width: 95px;
+	margin-right: 5px;
+}
+
+#DeleteTemplate{
+	width: 95px;
+}
+
+.templateMenu input {
+	font-weight: bold;
+	font-size: 20px;
 }

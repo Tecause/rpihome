@@ -55,9 +55,9 @@
 			     	<a class="nav-link" href="#">Scheduling</a>
 			    </li>
 			</ul>
-        <form class="form-inline mt-2 mt-0">
-          <div class="dropdown">
-		    	<button class="btn btn-info font-weight-bold dropdown-toggle" type="button" data-toggle="dropdown">Settings<span class="caret"></span></button>
+        <form class="form-inline my-0 my-2">
+         	<div class="dropdown">
+		    	<button class="btn btn-info text-dark font-weight-bold dropdown-toggle" type="button" data-toggle="dropdown">Settings<span class="caret"></span></button>
 		    	<ul class="dropdown-menu">
 			      	<li><a data-toggle="modal" data-target="#changepassword" href="#">Change Password</a></li>
 			      	<li><a data-toggle="modal" data-target="#adduser" href="#">New user</a></li>
