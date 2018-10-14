@@ -4,7 +4,7 @@
 .templateMenu input {
 	width: 30%;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: ;
 }
 	
 
@@ -24,7 +24,7 @@
 
 			<div class="templateMenu mt-2 ml-4">
 			
-				<input type="button" class="btn btn-success" value="Activate">
+				<input id="ActivateTemplate" type="button" class="btn btn-success" value="Activate">
 				<input type="button" class="btn btn-warning" value="Edit">
 				<input type="button" class="btn btn-danger" value="Delete">
 
