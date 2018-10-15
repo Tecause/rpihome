@@ -13,13 +13,13 @@
 		{
 			if ($settings[$i - 1] == "1")
 			{
-				exec("sudo python /home/pi/ch".$i."on.py");
+				exec("sudo python /home/pi/ch".$i."ON.py");
 				$sql = "UPDATE channel SET channelStatus = 1 WHERE channelNumber = ".$i."";
 		      	mysqli_query($db,$sql);		      	
 			}
 			else
 			{
-				exec("sudo python /home/pi/ch".$i."off.py");
+				exec("sudo python /home/pi/ch".$i."OFF.py");
 				$sql = "UPDATE channel SET channelStatus = 0 WHERE channelNumber = ".$i."";
 		      	mysqli_query($db,$sql);
 			}  

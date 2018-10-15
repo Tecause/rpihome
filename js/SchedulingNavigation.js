@@ -22,7 +22,6 @@ $(document).ready(function($) {
 		
 		var name = $("#SchedulingPage #templateList").val();
 		var onTime = getCurrentDate() + " " + $("#SchedulingPage #onTime").val() + ":00";
-		var offTime =  getCurrentDate() + " " + $("#SchedulingPage #offTime").val() + ":00";
 		var schedule = "";
 
 		$("#SchedulingPage .btn-group input").each(function() {
@@ -32,7 +31,7 @@ $(document).ready(function($) {
 		});
 
 
-		$.post('./php/SaveSchedule.php', {templateName: name, scheduleDay: schedule, timeStart: onTime, timeEnd:offTime}, function(data) {
+		$.post('./php/SaveSchedule.php', {templateName: name, scheduleDay: schedule, timeStart: onTime}, function(data) {
 
 			$.notify("Schedule Saved Successfully!", {position: "top center", className: "success"});
 

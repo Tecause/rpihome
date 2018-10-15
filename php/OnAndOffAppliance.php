@@ -7,7 +7,7 @@
 		$channelNumber = (int)filter_var($name, FILTER_SANITIZE_NUMBER_INT);
 
 		// Execute the python script
-		// exec("sudo python /home/pi/".$name.".py");
+		exec("sudo python /home/pi/".$name.".py");
 		/////////////////////////////////////////////
 
 		

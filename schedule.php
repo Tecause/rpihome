@@ -5,12 +5,20 @@
 		
 		function checkSchedule() {
 
-			$.ajax({
-				type: 'POST',
-				url: 'checker.php',
-				success: function(response) {
-					// location.reload();
+			$.post('./newChecker.php', function(data) {
+				var _data = JSON.parse(data);
+
+				if (_data == "none") {
+					alert(_data);
 				}
+				else {
+
+					$.post('./php/ActivateTemplate.php', {templateName: _data}, function(data) {
+						// TRY
+					});
+
+				}
+				
 			});
 		}
 
