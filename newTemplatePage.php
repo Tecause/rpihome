@@ -4,31 +4,31 @@
 <div style="max-width: 100%;">
 	
 	
-	<div id="templateNames" class="col-3 mx-auto">
+	<div id="templateNames" class="col-8 cl mx-auto">
 		
 		<h3 class="font-weight-bold">Choose Template:</h3>
-		<div class="form-group">
+		<div class="form-group ">
 			
-			<select class="form-control" id="templateList">
+			<select class="form-control w-100" id="templateList">
 
 			</select>
 
-			<div class="templateMenu mt-2 ml-4">
+			<center><div class="templateMenu mt-2 ml-4"></center>
 			
-				<input id="ActivateTemplate" type="button" class="btn btn-success" value="Activate"><br>
-				<input id="modalPopUpAddTemplate" type="button" class="btn btn-primary" value="Add" data-toggle="modal" data-target="#modalAddTemplate">
-				<input id="EditTemplate" type="button" class="btn btn-warning" value="Edit">
-				<input id="DeleteTemplate" type="button" class="btn btn-danger" value="Delete">
+				<input id="ActivateTemplate" type="button" class="btn btn-success btn-lg btn-block" value="Activate"><br>
+				<input id="modalPopUpAddTemplate" type="button" class="btn btn-primary btn-block" value="Add" data-toggle="modal" data-target="#modalAddTemplate">
+				<input id="EditTemplate" type="button" class="btn btn-warning btn-block" value="Edit">
+				<input id="DeleteTemplate" type="button" class="btn btn-danger btn-block" value="Delete">
 				
 
 			</div>
 
-		</div>
+		</div> 
 
 	</div>
 	
 
-	<div id="templateContent" class="border bg-transparent" style="width: 90%; height: 55vh;">
+	<div id="templateContent" class="border bg-transparent mx-auto" style="width: 80%; height: 55vh;">
 		
 
 

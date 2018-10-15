@@ -54,7 +54,7 @@ div.modal-body label img {
 
 .applianceOptions i{
 	position: fixed;
-	margin-top: -55px;
+	margin-top: -2.75%;
 }
 
 #edit{
@@ -98,22 +98,20 @@ li{
 }
 
 #ActivateTemplate{
-	width: 395px;
-	height: 70px;
-	margin-bottom: 10px;
+	/*width: 95%;*/
 }
 
-#modalPopUpAddTemplate{
-	width: 129px;
+/*#modalPopUpAddTemplate{
+	width: 31%;
 }
 
 #EditTemplate{
-	width: 129px;
+	width: 31%;
 }
 
 #DeleteTemplate{
-	width: 129px;
-}
+	width: 31%;
+}*/
 
 .templateMenu input {
 	font-weight: bold;
@@ -126,4 +124,8 @@ li{
 
 #templateList{
 	height: 50px;
+}
+
+#SchedulingPage h3{
+	margin-top: 100px;
 }
