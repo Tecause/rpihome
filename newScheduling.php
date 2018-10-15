@@ -7,7 +7,7 @@
 <script src="./js/SchedulingNavigation.js"></script>
 
 
-<div id="SchedulingPage" class="mt-xl-5">
+<div id="SchedulingPage" class="mt-xl-5" style="max-width: 80%">
 
 
 	<div>

@@ -30,7 +30,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-sm bg-info navbar-light fixed-top sticky-top">
+	<nav class="navbar navbar-expand-sm bg-info navbar-light fixed-top">
 		<div class="navbar-brand" href="#">
 			<img src="./img/rpi.jpg" alt="Logo" style="width:50px;">
 		</div>
