@@ -50,7 +50,10 @@
 
 			<div><br>
 				<input id="btnSaveSchedule" type="button" class="btn btn-success text-white btn-lg w-25" value="Save!"><br>
+				
 				<input id="btnDeleteSchedule" type="button" class="btn btn-danger text-white btn-lg w-25 mt-2" data-toggle="modal" data-target="#deleteschedule" value="Delete Schedule">
+
+				<input id="btnAddSpecificSchedule" type="button" class="btn btn-primary" value="Add Specific" data-toggle="modal" data-target="#addSpecificSchedule">
 			</div>
 
 		</div>
@@ -58,6 +61,46 @@
 
 	</div>
 </div></center>
+
+
+<div class="modal fade" id="addSpecificSchedule">
+	
+	<div class="modal-dialog">
+		
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1>Schedule</h1>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+
+			<div class="modal-body">
+				<div class="form-group">
+					<select class="form-control" id="templateListSpecific">
+
+					</select>
+				</div>
+				
+				<div class="form-group">
+					<input id="specificDate" type="date" id="datepicker" class="form-control" />
+				</div>
+
+				<div class="form-group">
+				    <input id="specificOnTime" type="time" class="form-control" value="09:30">
+				</div>
+
+			</div>
+
+			<div class="modal-footer">
+				<div class="form-group mx-auto">
+					<input id="saveSpecificSchedule" type="button" class="btn btn-primary" value="Save">
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+</div>
 
 
 
@@ -68,7 +111,7 @@
 
 				<div class="modal-header">
 					<h4 class="modal-title">Delete Schedule</h4>
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<span class="close" data-dismiss="modal">&times;</span>
 				</div>
 
 				
@@ -76,13 +119,13 @@
 					<div class="container">
 						<form action="newSchedule.php">
 							
-							  <div class="list-group">
+						  	<div class="list-group">
 							    <a href="#" class="list-group-item list-group-item-action list-group-item-danger mb-1" data-toggle="modal" data-target="#option"></a>
 							    <a href="#" class="list-group-item list-group-item-action list-group-item-danger mb-1" data-toggle="modal" data-target="#option"></a>
 							    <a href="#" class="list-group-item list-group-item-action list-group-item-danger mb-1" data-toggle="modal" data-target="#option"></a>
 							    <a href="#" class="list-group-item list-group-item-action list-group-item-danger mb-1" data-toggle="modal" data-target="#option"></a>
-							    
-							  </div>
+						    
+						  	</div>
 						
 					</form>
 				</div>

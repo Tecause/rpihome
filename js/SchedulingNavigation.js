@@ -39,6 +39,33 @@ $(document).ready(function($) {
 
 	});
 
+	$("#btnAddSpecificSchedule").on('click', function(event) {
+
+		$.post('./php/GetTemplates.php', function(data) {
+			var _data = JSON.parse(data);
+
+			$(".modal-dialog #templateListSpecific").append('<option>Templates...</option>');
+			for (var i = 0; i < _data.length; i++) {
+				$(".modal-dialog #templateListSpecific").append(_data[i]);
+			}
+
+		});
+
+	});
+
+	$("#saveSpecificSchedule").click(function(event) {
+
+		var dateTime = $("#specificDate").val() + " " + $("#specificOnTime").val();
+
+		$.post('./php/SaveSchedule.php', {templateName: $("#templateListSpecific").val(), scheduleDay: "Specific", timeStart: dateTime}, function(data) {
+
+			$.notify("Schedule Saved Successfully!", {position: "top center", className: "success"});
+
+		});
+	});
+
+
+
 	function getCurrentDate() {
 		var fullDate = new Date();
 		var twoDigitMonth = ((fullDate.getMonth() + 1) >= 10)? (fullDate.getMonth() + 1) : '0' + (fullDate.getMonth() + 1);
@@ -48,3 +75,4 @@ $(document).ready(function($) {
 	}
 
 });
+

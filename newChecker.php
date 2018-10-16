@@ -18,7 +18,19 @@
 
 		}
 		else {
-			$templateName = "none";
+			$sql = "SELECT applianceID FROM schedules WHERE `scheduleDay` LIKE 'Specific' AND DATE_FORMAT(`timeStart`, '%Y-%m-%d') = DATE_FORMAT(NOW(), '%Y-%m-%d') AND TIME(`timeStart`) <= '".date('H:i:s')."' AND DATE_ADD(TIME(`timeStart`), INTERVAL 10 SECOND) >= '".date('H:i:s')."'";
+			$result = mysqli_query($db, $sql);
+
+			if (mysqli_num_rows($result) != 0 ) {
+				while ($data = mysqli_fetch_assoc($result)) {
+					$templateName = $data['applianceID'];
+				}
+			}
+			else {
+				$templateName = "none";
+			}
+
+			
 		}
 
 		echo json_encode($templateName);
