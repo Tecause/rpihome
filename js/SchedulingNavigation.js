@@ -65,6 +65,32 @@ $(document).ready(function($) {
 	});
 
 
+	$("#btnDeleteSchedule").click(function(event) {
+
+
+		$.post('./php/GetSchedules.php', function(data) {
+			var _data = JSON.parse(data);
+			
+			for (var i = 0; i < _data.length; i++) {
+
+				$("#deleteScheduleList tbody").append('<tr><td id="schedID">'+_data[i]['scheduleID']+'</td><td>'+_data[i]['applianceID']+'</td><td>'+_data[i]['scheduleDay']+'</td><td>'+_data[i]['timeStart']+'</td><td><input type="button" value="X" class="btn btn-danger deleteThis"></td></tr>');
+			}
+		});
+
+	});
+
+
+	$("#deleteScheduleList table").delegate('input', 'click', function(event) {
+
+		var tmpID = $(this).parent().siblings('#schedID').html();
+		
+		$.post('./DeleteSchedule.php', {schedID: tmpID}, function(data) {
+
+			window.location.reload();
+
+		});
+
+	});
 
 	function getCurrentDate() {
 		var fullDate = new Date();

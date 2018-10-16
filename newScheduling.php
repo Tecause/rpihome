@@ -109,26 +109,41 @@
 		<div class="modal-content w-100">
 
 
-				<div class="modal-header">
-					<h4 class="modal-title">Delete Schedule</h4>
-					<span class="close" data-dismiss="modal">&times;</span>
-				</div>
+			<div class="modal-header">
+				<h4 class="modal-title">Delete Schedule</h4>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
 
-				
-				<div class="modal-body">
-					<div class="container">
-						<form action="newSchedule.php">
-							
-						  	<div class="list-group">
-							    <a href="#" class="list-group-item list-group-item-action list-group-item-danger mb-1" data-toggle="modal" data-target="#option"></a>
-							    <a href="#" class="list-group-item list-group-item-action list-group-item-danger mb-1" data-toggle="modal" data-target="#option"></a>
-							    <a href="#" class="list-group-item list-group-item-action list-group-item-danger mb-1" data-toggle="modal" data-target="#option"></a>
-							    <a href="#" class="list-group-item list-group-item-action list-group-item-danger mb-1" data-toggle="modal" data-target="#option"></a>
-						    
-						  	</div>
+			
+			<div class="modal-body">
+				<div class="container">
+					<form>
 						
+					  	<div class="list-group" id="deleteScheduleList">
+						    
+					    	<table class="table table-hover">
+					    		<thead class="text-center">
+					    			<th>I.D.</th>
+					    			<th>Template Name</th>
+					    			<th>Schedule Day</th>
+					    			<th>Date Time</th>
+					    			<th>Delete</th>
+					    		</thead>
+					    		<tbody>
+
+					    		</tbody>
+
+					    	</table>
+						
+
+
+
+					  	</div>
+
+					
 					</form>
 				</div>
+
 			</div>
 		</div>
 	</div>
