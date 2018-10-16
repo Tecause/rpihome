@@ -1,3 +1,5 @@
+<script src="./js/updateWattage.js"></script>
+
 <div class="digitalSwitch">
 
 <?php  
@@ -36,8 +38,39 @@
 					
 				  </div>';
 			}
+
+
+
 			
 		}
+
+		// ADDED =====================================
+
+			$sql = "SELECT appID, channelNumber FROM appliances";
+			$result = mysqli_query($db,$sql);
+
+
+			while ($data = mysqli_fetch_array($result,MYSQLI_ASSOC))
+			{
+				// Get the total of time
+				$totalTime = 0;
+
+				$sql2 = "SELECT SUM(TIMESTAMPDIFF(SECOND, startTime, endTime)) AS dateDiff FROM transactions WHERE appID = ".$data["appID"]; 
+				$data2 = mysqli_fetch_array(($result2 = mysqli_query($db,$sql2)),MYSQLI_ASSOC);
+				$totalTime += $data2["dateDiff"];
+
+				// Get the wattage and multiply it with time
+				$sql3 = "SELECT appWatts FROM appliances WHERE appID = '".$data["appID"]."'";
+				$data3 = mysqli_fetch_array(($result3 = mysqli_query($db,$sql3)),MYSQLI_ASSOC);
+				$wattage = $data3["appWatts"] / 60 / 60;
+
+				$wattageInSecond = $totalTime * $wattage;
+
+				echo '<script> updateWattage('.$data["channelNumber"].', '.round($wattageInSecond/1000, 2).')</script>';
+			}
+
+			
+			// ===========================================
 	}
 
 ?>
