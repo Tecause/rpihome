@@ -107,6 +107,7 @@ $(document).ready(function($) {
 		});
 	});
 
+
 	function clearModal() {
 
 		$("#applianceID").val('');

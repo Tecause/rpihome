@@ -1,3 +1,7 @@
+<?php 
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,10 +31,39 @@
 	<!-- =============== -->
 
 
+	<script>
+		
+		$(document).ready(function($) {
+			$.post('./php/AutoLoad.php', function(data, textStatus, xhr) {
+				var _data = JSON.parse(data);
+				$("#counter").val(_data);
+				
+			});
+
+			setInterval(function() {
+
+				$.post('./php/AutoLoad.php', function(data, textStatus, xhr) {
+					var currentCount = $("#counter").val();
+					var _data = JSON.parse(data);
+
+					if (currentCount != _data) {
+						window.location.reload();
+						$("#counter").val(_data);
+					}
+					
+				});
+
+
+			}, 3000);
+		});
+
+		
+	</script>
 </head>
 <body>
+	<input type="hidden" id="counter">
 
-	<nav class="navbar navbar-expand-sm bg-info navbar-light fixed-top">
+	<nav class="navbar navbar-expand-sm bg-info navbar-light fixed-top sticky-top">
 		<div class="navbar-brand" href="#">
 			<img src="./img/rpi.jpg" alt="Logo" style="width:50px;">
 		</div>
@@ -167,3 +200,4 @@
 	
 </body>
 </html>
+
