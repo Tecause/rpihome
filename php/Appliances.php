@@ -11,7 +11,7 @@
 		if ($result = mysqli_query($db, $sql)) {
 
 			while ($data = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-				echo '<div class="imgDiv">
+				echo '<div class="imgDiv ">
 					
 					<div id="applianceImg">
 						<img id="imgCh1" src="' .$data["appPic"].'">
